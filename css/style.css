@@ -1733,20 +1733,9 @@ h3 .italic {
     width: 100%;
     filter: none;
     box-shadow: none;
-    border-radius: 0;
+    border-radius: var(--radius-lg);
     z-index: 2;
     position: relative;
-}
-
-.image-decoration-gold {
-    position: absolute;
-    top: -30px;
-    left: -30px;
-    width: 200px;
-    height: 200px;
-    border: 1px solid var(--gold-primary);
-    border-radius: var(--radius-lg);
-    z-index: 0;
 }
 
 .omne-text {
@@ -1755,11 +1744,49 @@ h3 .italic {
 
 .omne-text .subtitle {
     font-family: var(--font-body);
-    font-size: var(--text-xl); /* Normalized from 1.5rem to 1.25rem for consistency */
+    font-size: var(--text-xl);
     font-weight: 500;
     color: var(--gold-dark);
     margin-bottom: 2rem;
     display: block;
+}
+
+.omne-image-mobile {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .omne-overlap-layout { 
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .omne-text { 
+        padding-right: 0; 
+        order: 1; 
+        text-align: left;
+    }
+    
+    .omne-image { 
+        display: none !important; 
+    }
+    
+    .omne-image-mobile {
+        display: block !important;
+        width: 100%;
+        max-width: 500px;
+        margin: 0 0 2.5rem 0;
+    }
+
+    .omne-image-mobile img {
+        width: 100%;
+        border-radius: var(--radius-lg);
+        box-shadow: none;
+    }
+    
+    .about-story { 
+        text-align: left; 
+    }
 }
 
 .about-content p {
@@ -1774,7 +1801,7 @@ h3 .italic {
 }
 
 .about-story h3 {
-    font-size: var(--text-xl); /* Matches Záloha a tvorba */
+    font-size: var(--text-xl);
     margin-bottom: 0.75rem;
     color: #0d2a54;
 }
@@ -2058,33 +2085,6 @@ h3 .italic {
     }
 }
 
-.omne-image-mobile {
-    display: none;
-}
-
-@media (max-width: 1024px) {
-    .omne-overlap-layout { 
-        display: flex;
-        flex-direction: column;
-        grid-template-columns: 1fr; 
-    }
-    .omne-text { 
-        padding-right: 0; 
-        order: 1; 
-        text-align: left; /* Back to left-aligned as requested */
-    }
-    .omne-image { 
-        display: none !important; 
-    }
-    .omne-image-mobile {
-        display: block !important;
-        max-width: 450px; /* Slightly larger on mobile if suitable */
-        margin: 1.5rem 0 2.5rem; /* Left aligned with common margin-bottom */
-    }
-    .about-story { 
-        text-align: left; 
-    }
-}
 
 @media (max-width: 768px) {
     .faq-questions .glass-card {
