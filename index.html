@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web, který funguje i vypadá skvěle</title>
+    <meta name="description"
+        content="Chcete web, který zaujme a zároveň funguje? Pomáhám podnikatelům a malým firmám získat online prezentaci, na kterou budete rádi odkazovat.">
+    <link rel="canonical" href="https://webysradosti.cz/">
+    <link rel="icon" type="image/svg+xml" href="Obrázky/Weby%20s%20radostí%20favicon.svg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Weby pro podnikatele a malé firmy">
+    <meta property="og:description"
+        content="Váš web by měl odrážet, jak dobrou práci děláte. Pomáhám vám, aby to tak skutečně vypadalo.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://webysradosti.cz/">
+    <meta property="og:image" content="https://webysradosti.cz/Obrázky/Weby%20s%20radostí%20logo%20(1200%20x%20630%20px).png">
+    <meta property="og:image:alt" content="Weby s radostí - Logo tvořivého webdesignu">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Weby pro podnikatele a malé firmy">
+    <meta name="twitter:description"
+        content="Váš web by měl odrážet, jak dobrou práci děláte. Pomáhám vám, aby to tak skutečně vypadalo.">
+    <meta name="twitter:image" content="https://webysradosti.cz/Obrázky/Weby%20s%20radostí%20logo%20(1200%20x%20630%20px).png">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Weby s radostí",
+      "image": "https://webysradosti.cz/Obrázky/Weby%20s%20radostí%20logo.svg",
+      "url": "https://webysradosti.cz/",
+      "telephone": "+420603748003",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "V Nivách 4564/34",
+        "addressLocality": "Jablonec nad Nisou",
+        "postalCode": "46601",
+        "addressCountry": "CZ"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 50.724,
+        "longitude": 15.172
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Iveta Flaisnerová"
+      },
+      "description": "Chcete web, který zaujme a zároveň funguje? Pomáhám podnikatelům a malým firmám získat online prezentaci, na kterou budete rádi odkazovat.",
+      "sameAs": []
+    }
+    </script>
+</head>
+
+<body>
+
+    <!-- Header / Navigace -->
+    <header class="header">
+        <div class="container header-inner">
+            <a href="#" class="logo"><img src="Obrázky/Weby%20s%20radostí%20logo.svg" alt="Weby s radostí - Logo tvořivého webdesignu" width="200" height="80"></a>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#co-nabizim" class="nav-link">Co nabízím</a></li>
+                    <li><a href="#jak-to-probiha" class="nav-link">Jak to probíhá</a></li>
+                    <li><a href="#cenik" class="nav-link">Ceník</a></li>
+                    <li><a href="#o-mne" class="nav-link">O mně</a></li>
+                </ul>
+                <a href="#spojme-se" class="btn btn-secondary">Spojme se</a>
+            </nav>
+
+            <button class="menu-toggle" aria-label="Otevřít menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Sekce -->
+        <section class="hero bg-cream" id="hero">
+            <div class="container hero-inner">
+                <div class="hero-content reveal">
+                    <p class="hero-subtitle">Tvořím weby na míru, s péčí o každý detail</p>
+                    <h1 class="main-heading">Web, který budete<br>chtít <span class="italic-gold">ukázat světu</span>
+                    </h1>
+                    <div class="hero-actions">
+                        <a href="#co-nabizim" class="btn btn-primary btn-large btn-tracked">Co nabízím</a>
+                    </div>
+                </div>
+
+                <div class="hero-image-wrapper">
+                    <img src="Obrázky/hero%20sekce%20aktual.png" alt="Iveta Flaisnerová - Tvůrkyně webů s radostí a citem pro detail"
+                        class="hero-canva-right-img" width="600" height="600">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Citát / Přechodová sekce -->
+        <section class="section quote-divider bg-cream reveal">
+            <div class="container narrow">
+                <div class="quote-content">
+
+
+                    <p class="quote-text">
+                        Ráda ladím barvy, proporce a detaily tak dlouho, dokud to nezačne ladit. Věřím, že web není jen
+                        o informacích — <strong>je o pocitu</strong>. Když se zákazník na váš web podívá a řekne si
+                        <span class="gold-italic">„tady mi je dobře“</span>. To je ten moment, který buduje důvěru. A
+                        důvěra přivádí zákazníky.
+                    </p>
+
+                    <div class="quote-separator single-line">
+                        <div class="line"></div>
+                    </div>
+
+                    <p class="quote-text">
+                        Ale stejně důležité je, abyste si to samé řekli i vy. Když uvidíte hotový web, chci aby vaše
+                        první reakce byla: <span class="gold-italic">„Jo, to je ono.“</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section poznate-se" id="co-nabizim">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Tohle možná znáte<br><em class="italic">až moc dobře...</em></h2>
+                </div>
+
+                <div class="pain-points-grid reveal">
+                    <div class="pain-points-content">
+                        <div class="pain-points-list-vertical">
+                            <div class="pain-point-item reveal">
+                                <p>Říkáte si už dlouho "ten web si musím udělat", ale pořád to odkládáte?</p>
+                            </div>
+                            <div class="pain-point-item reveal">
+                                <p>Zákazníci vás hledají na internetu, ale nenajdou vás?</p>
+                            </div>
+                            <div class="pain-point-item reveal">
+                                <p>Posíláte každému zákazníkovi znovu a znovu stejné informace o sobě a svých službách?
+                                </p>
+                            </div>
+                            <div class="pain-point-item reveal">
+                                <p>Máte web, ale stydíte se na něj poslat odkaz?</p>
+                            </div>
+                            <div class="pain-point-item reveal">
+                                <p>Platíte za reklamu, ale nemáte kam zákazníky poslat?</p>
+                            </div>
+                            <div class="pain-point-item reveal">
+                                <p>Spoléháte jen na doporučení od známých, ale chcete oslovit i nové zákazníky?</p>
+                            </div>
+                            <div class="pain-point-item reveal">
+                                <p>Máte skvělé reference, ale nikde nejsou vidět?</p>
+                            </div>
+                            <div class="pain-point-item reveal">
+                                <p>Chcete rozšířit podnikání, ale nevíte, jak oslovit lidi, kteří vás ještě neznají?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pain-points-visual-wrapper reveal">
+                        <div class="visual-card transparent">
+                            <div class="visual-image">
+                                <img src="Obrázky/ilsutrace do sekce problematika.png"
+                                    alt="Ilustrace k sekci problémů s webem - Weby s radostí" loading="lazy" width="450" height="560">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="conclusion reveal">
+                    <div class="conclusion-box">
+                        <p>Pokud jste přikývli alespoň u jedné otázky, jste na správné adrese.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proč Weby s radostí (Enhanced Bento) -->
+        <section class="section proc-weby bg-light">
+            <div class="container">
+                <div class="section-header reveal">
+
+                    <h2>Co pro vás znamená<br><em class="italic">spolupráce se mnou</em></h2>
+                </div>
+
+                <div class="bento-grid-modern">
+                    <div class="bento-card bento-autenticita reveal">
+                        <div class="bento-icon-wrapper">
+                            <img src="Obrázky/ikony/autenticita.svg" alt="Ikona autenticity - Weby s radostí" class="bento-custom-icon" width="60" height="60" loading="lazy">
+                        </div>
+                        <div class="bento-info">
+                            <h3>Autenticita</h3>
+                            <p>Každý web tvořím tak, aby vystihoval vaši identitu, kdo jste, co děláte a jak chcete
+                                působit. Výsledkem je web, který je opravdu váš.</p>
+                        </div>
+                    </div>
+
+                    <div class="bento-card bento-lidsky reveal">
+                        <div class="bento-icon-wrapper">
+                            <img src="Obrázky/ikony/lidsky pristup.svg" alt="Ikona lidského přístupu - Weby s radostí" class="bento-custom-icon" width="60" height="60" loading="lazy">
+                        </div>
+                        <div class="bento-info">
+                            <h3>Lidský přístup</h3>
+                            <p>Mluvím jazykem, kterému rozumíte. Žádné technické výrazy, žádné zkratky. Vše vysvětlím
+                                srozumitelně od první schůzky po spuštění.</p>
+                        </div>
+                    </div>
+
+                    <div class="bento-card bento-rychlost reveal">
+                        <div class="bento-icon-wrapper">
+                            <img src="Obrázky/ikony/rychlost.svg" alt="Ikona rychlosti - Weby s radostí" class="bento-custom-icon" width="60" height="60" loading="lazy">
+                        </div>
+                        <div class="bento-info">
+                            <h3>Rychlost</h3>
+                            <p>Web do týdne, ne za měsíce. Můžete začít získávat zákazníky rychle, bez zbytečného
+                                čekání.</p>
+                        </div>
+                    </div>
+
+                    <div class="bento-card bento-detail reveal">
+                        <div class="bento-icon-wrapper">
+                            <img src="Obrázky/ikony/detail.svg" alt="Ikona pozornosti k detailům - Weby s radostí" class="bento-custom-icon" width="60" height="60" loading="lazy">
+                        </div>
+                        <div class="bento-info">
+                            <h3>Detail rozhoduje</h3>
+                            <p>Mám cit pro estetiku a přehlednost, věci musí ladit vizuálně i obsahově. Dobrý první
+                                dojem vzniká ještě předtím, než si zákazník přečte první větu.</p>
+                        </div>
+                    </div>
+
+                    <div class="bento-card bento-po-spusteni reveal">
+                        <div class="bento-icon-wrapper">
+                            <img src="Obrázky/ikony/jsem tu i po.svg" alt="Ikona dlouhodobé spolupráce - Weby s radostí"
+                                class="bento-custom-icon" width="60" height="60" loading="lazy">
+                        </div>
+                        <div class="bento-info">
+                            <h3>Jsem tu i po spuštění</h3>
+                            <p>Nezmizím po předání webu. Potřebujete něco upravit, přidat nebo poradit? Stačí napsat —
+                                jsem tu stále pro vás.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Jak to probíhá -->
+        <section class="section proces" id="jak-to-probiha">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Od první zprávy<br><em class="italic">po spuštění webu</em></h2>
+                    <p>Celý proces jsem navrhla tak, aby byl pro vás co nejjednodušší.</p>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-side">
+                        <div class="step-visual-side">
+                            <img src="Obrázky/ilustrace sekce Jak to probiha.png" alt="Ilustrace k procesu tvorby webu krok za krokem"
+                                loading="lazy" width="400" height="500">
+                        </div>
+                    </div>
+
+                    <div class="timeline-main">
+                        <div class="timeline-item step-1">
+                            <div class="step-number">1</div>
+                            <div class="step-content glass-card">
+                                <div class="step-badge">Káva nebo online?</div>
+                                <h3>Sejdeme se a popovídáme</h3>
+                                <p>Ráda se s vámi potkám osobně, působím především v Libereckém kraji. Pokud jste dál,
+                                    domluvíme se online. Ještě před naší schůzkou vám pošlu pár otázek, ať máte čas se
+                                    nad nimi v klidu zamyslet. Naše setkání pak bude efektivnější a budeme se mít od
+                                    čeho odrazit.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="step-number">2</div>
+                            <div class="step-content glass-card">
+                                <div class="step-badge">Vše jasně na papíře</div>
+                                <h3>Připravím vám nabídku zdarma</h3>
+                                <p>Na základě našeho rozhovoru připravím cenovou nabídku, jasně a srozumitelně. Pokud v
+                                    průběhu tvorby vzniknou nové požadavky nebo změny nad rámec domluvy, vždy vás předem
+                                    informuji o případné úpravě ceny.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="step-number">3</div>
+                            <div class="step-content glass-card">
+                                <div class="step-badge">5–10 pracovních dní</div>
+                                <h3>Záloha a tvorba</h3>
+                                <p>Jakmile si plácneme, pošlete mi zálohu 30 % a já se pustím do práce. Web mám hotový
+                                    do 5–10 pracovních dní od chvíle, kdy mi dodáte <a href="#faq-podklady" class="inline-link">potřebné podklady</a>, texty o službách
+                                    a cenách, fotografie, logo, představu o barvách a stylu, případně reference od
+                                    zákazníků.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="step-number">4</div>
+                            <div class="step-content glass-card">
+                                <div class="step-badge">Jdeme na to</div>
+                                <h3>Společně web zkontrolujeme a spustíme</h3>
+                                <p>Hotový web vám ukážu, projdeme ho společně a zapracuji vaše připomínky. Až budete
+                                    spokojeni, zaplatíte zbývající částku a jdeme online. Od té chvíle váš web pracuje
+                                    za vás.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Časté otázky -->
+        <section class="section faq bg-light">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Máte otázky?<br><em class="italic">Ráda odpovím</em></h2>
+
+                </div>
+
+                <div class="faq-modern reveal">
+                    <div class="faq-visual">
+                        <div class="faq-visual-content">
+                            <img src="Obrázky/ilustrace do sekce FAQ.png" alt="Ilustrace k častým dotazům ohledně webdesignu" loading="lazy" width="400" height="500">
+                        </div>
+                    </div>
+
+                    <div class="faq-questions">
+                        <div class="accordion glass-card">
+                            <div class="accordion-header">
+                                <h3>Jak dlouho trvá vytvoření webu?</h3>
+                                <i class="fas fa-chevron-down toggle-icon"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Jednostránkový web zvládnu zpravidla do 5 pracovních dní, vícestránkový do 10 dní, a
+                                    to od chvíle, kdy mi dodáte všechny potřebné podklady. Vždy vás předem informuji o
+                                    přesném termínu.</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion glass-card" id="faq-podklady">
+                            <div class="accordion-header">
+                                <h3>Jaké podklady od vás potřebuji?</h3>
+                                <i class="fas fa-chevron-down toggle-icon"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Texty píšete vy, vy svoji práci znáte nejlépe. Nemusí být dokonalé, stačí je napsat
+                                    tak, jako byste to říkali kamarádovi. Já pak upravím jejich strukturu tak, aby byly
+                                    na webu přehledné a srozumitelné. Pokud si s texty nevíte rady, mohu vás propojit s
+                                    copywriterkou, se kterou dlouhodobě spolupracuji.</p>
+                                <p style="margin-top:0.5rem">Dále budu potřebovat: fotografie, logo, představu o barvách
+                                    a stylu, texty o službách a cenách a případně reference od zákazníků.</p>
+                                <p style="margin-top:0.5rem">S fotkami pomohu, pokud nemáte vlastní, použijeme kvalitní
+                                    profesionální fotografie zdarma.</p>
+                                <div class="faq-tip">
+                                    <i class="far fa-lightbulb"></i>
+                                    <p>Před naší schůzkou vám pošlu pár otázek, ať máte čas se nad nimi v klidu
+                                        zamyslet. Budeme se mít od čeho odrazit.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion glass-card">
+                            <div class="accordion-header">
+                                <h3>Co když nebudu s výsledkem spokojený/á?</h3>
+                                <i class="fas fa-chevron-down toggle-icon"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Web odevzdám až tehdy, kdy budete spokojeni. Součástí každé zakázky jsou revize,
+                                    nikdy nespustíme nic, s čím nebudete stoprocentně spokojeni. Doplatek hradíte až po
+                                    předání hotového webu.</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion glass-card">
+                            <div class="accordion-header">
+                                <h3>Budu moct web sám upravovat?</h3>
+                                <i class="fas fa-chevron-down toggle-icon"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Weby tvořím moderním způsobem Vibecoding. Ten sice neumožňuje přímé úpravy z vaší
+                                    strany, ale díky tomu je web bleskově rychlý, bezpečný a přesně podle vašich
+                                    představ bez jakýchkoliv omezení. Kdykoliv budete potřebovat něco změnit, stačí mi
+                                    napsat. Drobné úpravy vyřídím rychle za malý poplatek, větší změny nacením
+                                    individuálně.</p>
+                                <p style="margin-top:0.5rem">Výhodou je, že se nemusíte učit žádný složitý systém,
+                                    prostě mi napíšete, co chcete, a já to zařídím.</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion glass-card">
+                            <div class="accordion-header">
+                                <h3>Mohu mít web ve více jazycích?</h3>
+                                <i class="fas fa-chevron-down toggle-icon"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Ano, vícejazyčný web je možný. Překlad textů zařídím za vás, technické nastavení
+                                    vícejazyčné verze také. Vícejazyčný web je součástí individuální nabídky, napište mi
+                                    a probereme detaily.</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion glass-card">
+                            <div class="accordion-header">
+                                <h3>Co se stane po roce, musím něco platit?</h3>
+                                <i class="fas fa-chevron-down toggle-icon"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Doména a hosting se každý rok obnovují, roční poplatek hradíte přímo vy
+                                    poskytovateli.</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion glass-card">
+                            <div class="accordion-header">
+                                <h3>Co je to doména a hosting?</h3>
+                                <i class="fas fa-chevron-down toggle-icon"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Doména je vaše adresa na internetu, např. vasefirma.cz. Hosting je "místo", kde web
+                                    fyzicky sídlí. Registraci a nastavení obojího zařídím za vás, roční poplatek za
+                                    provoz pak hradíte vy přímo poskytovateli.</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion glass-card">
+                            <div class="accordion-header">
+                                <h3>Co je SEO a proč je důležité?</h3>
+                                <i class="fas fa-chevron-down toggle-icon"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <p>SEO je způsob, jak nastavit web tak, aby ho Google snáze zobrazoval lidem, kteří
+                                    hledají vaše služby. Bez správného SEO by váš web jednoduše nikdo nenašel, je to
+                                    jako mít obchod bez cedule nade dveřmi. Základní SEO nastavení je součástí každého
+                                    webu.</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion glass-card">
+                            <div class="accordion-header">
+                                <h3>K čemu je profil na Googlu a Seznamu?</h3>
+                                <i class="fas fa-chevron-down toggle-icon"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Když někdo hledá vaši službu "v okolí", zobrazí se mu váš profil s adresou, telefonem
+                                    a hodnocením. Je to zcela zdarma a přivádí to zákazníky bez placené reklamy.</p>
+                                <div class="faq-tip">
+                                    <i class="far fa-lightbulb"></i>
+                                    <p>Profily na Googlu a Seznamu jsou jednou z nejefektivnějších věcí, které pro svůj
+                                        byznys můžete udělat zdarma.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion glass-card">
+                            <div class="accordion-header">
+                                <h3>Věděli jste, že vás zákazníci hledají i přes ChatGPT a AI?</h3>
+                                <i class="fas fa-chevron-down toggle-icon"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Lidé dnes stále častěji hledají služby a firmy nejen přes Google, ale přímo v AI
+                                    nástrojích jako ChatGPT, Gemini nebo Google AI. Ptají se "Doporuč mi dobrou
+                                    kadeřnici v Liberci", a AI jim odpoví na základě toho, co najde na webu.</p>
+                                <p style="margin-top:0.5rem">Proto každý web nastavím tak, aby byl správně čitelný nejen
+                                    pro Google, ale i pro tyto moderní nástroje. Váš web bude připravený na způsob,
+                                    jakým lidé hledají dnes i zítra.</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion glass-card">
+                            <div class="accordion-header">
+                                <h3>Nestačí mi jen sociální sítě?</h3>
+                                <i class="fas fa-chevron-down toggle-icon"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <ul class="faq-list">
+                                    <li><strong>Google vás na sítích nenajde</strong>, zákazníci hledající přes Google
+                                        se na Instagram nebo Facebook nedostanou.</li>
+                                    <li><strong>Web budí důvěru</strong>, vlastní web působí profesionálněji než odkaz
+                                        na Facebook.</li>
+                                    <li><strong>Web pracuje 24/7</strong>, na sítích musíte neustále přidávat obsah, web
+                                        funguje i bez toho.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="accordion glass-card">
+                            <div class="accordion-header">
+                                <h3>Nemůžu si web udělat sám pomocí AI?</h3>
+                                <i class="fas fa-chevron-down toggle-icon"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Můžete. AI nástroje jsou dnes skutečně výkonné. Sama je při tvorbě webů využívám. Ale
+                                    je tu pár věcí, které stojí za to vědět:</p>
+                                <ul class="faq-list">
+                                    <li>Nestačí jen zadat prompt, aby web vypadal profesionálně a fungoval správně, je
+                                        potřeba vědět co zadávat, jak to upravit a na co si dát pozor.</li>
+                                    <li>Technické nastavení zabere čas — doména, hosting, e-mail, SEO, zabezpečení,
+                                        rychlost — každá věc zvlášť vyžaduje znalosti a čas.</li>
+                                    <li>Výsledek sami neuvidíte objektivně — zkušený webař ví, co zákazníka přesvědčí.
+                                    </li>
+                                    <li>Váš čas má hodnotu — hodiny strávené nad webem jsou hodiny, kdy jste nedělali
+                                        svoji práci — tu, která vás živí.</li>
+                                </ul>
+                                <div class="faq-tip">
+                                    <i class="fas fa-wand-magic-sparkles"></i>
+                                    <p>Web v AI udělat lze. Ale udělat ho dobře je jiná písnička.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion glass-card reveal">
+                            <div class="accordion-header">
+                                <h3>Nenašli jste, co hledáte? <a href="#spojme-se" class="gold-link">Napište mi.</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ceník -->
+        <section class="section cenik" id="cenik">
+            <div class="container">
+                <div class="section-header reveal">
+
+                    <h2>Pojďme si říct<br><em class="italic">o ceně</em></h2>
+                    <p>Cena je jednorázová. Po spuštění webu už za nic navíc neplatíte. Jediné, co vás čeká každý rok,
+                        je poplatek za doménu a hosting, který hradíte přímo poskytovateli.</p>
+                </div>
+
+                <div class="pricing-included-modern reveal">
+                    <h3>Co je zahrnuto<br>u každého webu:</h3>
+                    <div class="included-grid">
+                        <div class="included-item">
+                            <i class="fas fa-magic icon-gold"></i>
+                            <div class="included-content">
+                                <h4>Design na míru</h4>
+                                <p>originální web postavený na vašich potřebách</p>
+                            </div>
+                        </div>
+                        <div class="included-item">
+                            <i class="fas fa-globe icon-blue"></i>
+                            <div class="included-content">
+                                <h4>Doména + hosting</h4>
+                                <p>postarám se o technické nastavení</p>
+                            </div>
+                        </div>
+                        <div class="included-item">
+                            <i class="fas fa-envelope icon-pink"></i>
+                            <div class="included-content">
+                                <h4>Firemní e-mail</h4>
+                                <p>profesionální adresa s vaší doménou</p>
+                            </div>
+                        </div>
+                        <div class="included-item">
+                            <i class="fas fa-search icon-blue"></i>
+                            <div class="included-content">
+                                <h4>SEO základ</h4>
+                                <p>aby vás zákazníci v Googlu snadno dohledali</p>
+                            </div>
+                        </div>
+                        <div class="included-item">
+                            <i class="fas fa-mobile-alt icon-pink"></i>
+                            <div class="included-content">
+                                <h4>Responzivní web</h4>
+                                <p>vypadá skvěle na telefonu i počítači</p>
+                            </div>
+                        </div>
+                        <div class="included-item">
+                            <i class="fas fa-lock icon-gold"></i>
+                            <div class="included-content">
+                                <h4>Zabezpečený web (SSL)</h4>
+                                <p>zámek, díky kterému vám zákazníci důvěřují</p>
+                            </div>
+                        </div>
+                        <div class="included-item">
+                            <i class="fas fa-bolt icon-blue"></i>
+                            <div class="included-content">
+                                <h4>Optimalizace rychlosti</h4>
+                                <p>web se načte rychle, Google vás hodnotí lépe</p>
+                            </div>
+                        </div>
+                        <div class="included-item">
+                            <i class="fas fa-redo icon-gold"></i>
+                            <div class="included-content">
+                                <h4>Revize do schválení</h4>
+                                <p>web odevzdám, až když jste 100% spokojeni</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pricing-modern reveal">
+                    <div class="pricing-card-modern card-blue">
+                        <div class="card-head">
+                            <h3>One page</h3>
+                            <div class="price">od 10 000 Kč</div>
+                            <p>Skvělá volba, pokud chcete být online vidět, ale nepotřebujete nic složitého. Základní
+                                informace o vás a vašich službách přehledně na jednom místě, vaše online vizitka, která
+                                pracuje za vás.</p>
+                        </div>
+                    </div>
+
+                    <div class="pricing-card-modern card-pink">
+                        <div class="card-head">
+                            <h3>Vícestránkový web</h3>
+                            <div class="price">od 15 000 Kč</div>
+                            <p>Ideální, pokud chcete své podnikání nebo projekt představit ve více detailech, rozepsat
+                                jednotlivé služby, sdílet reference a recenze zákazníků, přidat blog nebo portfolio.
+                                Více prostoru pro váš příběh, lepší výsledky v Googlu.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pricing-footer reveal">
+                    <p>Konečná cena závisí na rozsahu a požadavcích vašeho projektu, vždy nacením individuálně.</p>
+                    <p class="gold-highlight">Líbí se vám spolupráce, ale bojíte se, že na to nemáte rozpočet? Napište
+                        mi i tak, ráda se s vámi pobavím o tom, co by bylo možné. Možná společně něco vymyslíme.</p>
+                </div>
+
+                <div class="pricing-payment reveal">
+                    <div class="payment-grid">
+                        <div class="payment-info">
+                            <h2>Jak probíhá<br>platba?</h2>
+                            <p>Platba probíhá bankovním převodem ve dvou částech a je navržena tak, aby byla fér pro obě
+                                strany.</p>
+                            <p class="payment-note">Záloha chrání obě strany — vy víte, že práci dokončím, já vím, že
+                                projekt myslíte vážně.</p>
+                        </div>
+
+                        <div class="payment-steps">
+                            <div class="payment-step">
+                                <div class="step-header">
+                                    <span class="step-percentage">30%</span>
+                                    <span class="step-label">Záloha</span>
+                                </div>
+                                <p>po odsouhlasení nabídky, před zahájením práce</p>
+                            </div>
+
+                            <div class="payment-step">
+                                <div class="step-header">
+                                    <span class="step-percentage">70%</span>
+                                    <span class="step-label">Doplatek</span>
+                                </div>
+                                <p>po předání hotového webu, až budete spokojeni</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- O mně -->
+        <section class="section omne bg-light" id="o-mne">
+            <div class="container">
+                <div class="omne-overlap-layout reveal">
+                    <div class="omne-text">
+                        <h2>Iveta<br><em class="italic">Flaisnerová</em></h2>
+                        <p class="subtitle"><span style="color: var(--pink)">Tvůrkyně</span> <span style="color: var(--blue)">webů</span> <span style="color: var(--gold-primary)">·</span> <span style="color: var(--blue-dark)">Weby</span> <span style="color: var(--gold-primary)">s radostí</span></p>
+                        <div class="about-content">
+                            <div class="about-story">
+                                <h3>Moje cesta k webům</h3>
+                                <p>V roce 2019 jsem začala pracovat v online prostředí, především pro e-shopy
+                                    zaměřených na ženské zdraví. Jednou jsem dostala příležitost postarat se o celý web.
+                                    To byl moment, kdy všechno zapadlo na své místo a řekla jsem si, že půjdu tímto
+                                    směrem. Je to práce, kde mohu uplatnit svoje dovednosti a zároveň mně baví.</p>
+                            </div>
+                            <div class="about-story">
+                                <h3>Záleží mi na detailech</h3>
+                                <p>Jsem člověk, kterému záleží na detailech. Jsem estét, ráda věci ladím do posledního
+                                    prvku a nedám pokoj, dokud to nevypadá přesně tak, jak má. Zároveň mi záleží na
+                                    přehlednosti, web musí být krásný, ale hlavně musí zákazníkům dávat smysl na první
+                                    pohled.</p>
+                            </div>
+                            <div class="about-story">
+                                <h3>Váš web, vaše identita</h3>
+                                <p>Pracuji moderní technologií Vibecoding, která mi umožňuje soustředit se na to, co mě
+                                    skutečně baví — aby každý web co nejvíce vystihoval identitu mého klienta. Věřím, že
+                                    dobrý web není o tom, aby vypadal jako všechny ostatní. Je o tom vystihnout vaši
+                                    podstatu a vaši jedinečnost.</p>
+                            </div>
+                            <div class="about-story">
+                                <h3>Kdo jsem mimo práci</h3>
+                                <p>Mimo práci energii čerpám v přírodě, dlouhé procházky jsou moje reset tlačítko.
+                                    Miluju hudbu, zpěv a tanec. A zajímám se o to, jak funguje lidská mysl, co nás
+                                    pohání, co nás blokuje a jak najít klid sami v sobě. Říkám si, že kdo rozumí lidem,
+                                    rozumí i tomu, co potřebují vidět na webu. A to je přesně to, o co se snažím.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="omne-image">
+                        <img src="Obrázky/O%20mne.png" alt="Iveta Flaisnerová - Portrét tvůrkyně Webů s radostí" class="rounded-image" loading="lazy" width="500" height="600">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kontakt -->
+        <section class="section kontakt-premium bg-cream" id="spojme-se">
+            <div class="container reveal">
+                <div class="contact-wrapper">
+                    <div class="contact-intro">
+                        <h2>Pojďme probrat<br><em class="italic">váš projekt</em></h2>
+                        <p>Řekněte mi o svých představách. Ráda si o vašem budoucím webu popovídám. Napište mi, zavolejte nebo vyplňte formulář — odpovím vám co nejdříve.</p>
+
+                        <div class="contact-channels">
+                            <a href="tel:+420603748003" class="channel-item">
+                                <div class="channel-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="channel-info">
+                                    <span class="label">Zavolejte mi</span>
+                                    <span class="value">603 748 003</span>
+                                </div>
+                            </a>
+
+                            <a href="mailto:iveta@webysradosti.cz" class="channel-item">
+                                <div class="channel-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="channel-info">
+                                    <span class="label">Napište e-mail</span>
+                                    <span class="value">iveta@webysradosti.cz</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="contact-trust-tag">
+                            <i class="fas fa-magic"></i>
+                            <p>Odpovídám zpravidla do 24 hodin</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-glass reveal">
+                        <div class="form-header">
+                            <h3>Rychlá zpráva</h3>
+                            <p>Máte otázku? Prostě mi napište.</p>
+                        </div>
+
+                        <form id="contact-form" action="https://formspree.io/f/mjganjeo" method="POST"
+                            class="form-modern">
+
+                            <div class="form-grid">
+                                <div class="form-input-group">
+                                    <label for="jmeno">Vaše jméno</label>
+                                    <input type="text" id="jmeno" name="jmeno" required>
+                                </div>
+
+                                <div class="form-input-group">
+                                    <label for="email">E-mailová adresa</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                            </div>
+
+                            <div class="form-input-group full-width">
+                                <label for="zprava">Vaše zpráva</label>
+                                <textarea id="zprava" name="zprava" rows="5" required></textarea>
+                            </div>
+
+                            <button type="submit" id="submit-btn" class="btn btn-primary btn-full btn-glow">
+                                <span class="btn-text">Odeslat zprávu</span> <i class="fas fa-paper-plane"></i>
+                            </button>
+
+                            <p class="form-footer-note">Stisknutím souhlasíte se zpracováním údajů pro účely odpovědi.</p>
+                        </form>
+
+                        <div id="form-message-success" class="form-message success" style="display:none">
+                            <div class="message-icon"><i class="fas fa-check-circle"></i></div>
+                            <div class="message-text">
+                                <h3>Zpráva byla úspěšně odeslána!</h3>
+                                <p>Děkuji za váš zájem, ozvu se vám co nejdříve (zpravidla do 24 hodin).</p>
+                                <button type="button" class="btn btn-secondary btn-sm"
+                                    onclick="location.reload()">Poslat další zprávu</button>
+                            </div>
+                        </div>
+
+                        <div id="form-message-error" class="form-message error" style="display:none">
+                            <div class="message-icon"><i class="fas fa-exclamation-circle"></i></div>
+                            <div class="message-text">
+                                <h3>Něco se nepovedlo...</h3>
+                                <p>Zkuste to prosím znovu za chvíli nebo mi napište přímo na e-mail.</p>
+                                <button type="button" class="btn btn-secondary btn-sm"
+                                    onclick="document.getElementById('form-message-error').style.display='none'; document.getElementById('contact-form').style.display='block';">Zkusit
+                                    znovu</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-grid">
+                <div class="footer-brand reveal">
+                    <div class="logo-footer">Weby s radostí</div>
+                    <p class="footer-tagline">Navrhuji a tvořím autentické weby s důrazem na detail a vaši spokojenost.</p>
+                </div>
+
+                <div class="footer-info reveal">
+                    <h4 class="footer-title">Kontaktujte mě</h4>
+                    <div class="footer-details">
+                        <p><strong>Iveta Flaisnerová</strong></p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:iveta@webysradosti.cz">iveta@webysradosti.cz</a></p>
+                        <p><i class="fas fa-phone-alt"></i> <a href="tel:+420603748003">+420 603 748 003</a></p>
+                    </div>
+                </div>
+
+                <div class="footer-webkitty reveal">
+                    <a href="https://webkitty.cz" target="_blank" class="webkitty-link">
+                        <img src="Obrázky/logo-webkitty.svg" alt="Webkitty - Partner pro domény a hosting" class="webkitty-logo" width="150" height="40" loading="lazy">
+                    </a>
+                    <p class="webkitty-text">
+                        Pro hosting a domény spolupracuji s <a href="https://webkitty.cz" target="_blank"><strong>Webkitty</strong></a>. Spolehlivou českou službu sama používám a s čistým svědomím ji doporučuji i vám.
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-footer reveal">
+                <div class="footer-divider"></div>
+                <div class="footer-bottom-info">
+                    <p>IČO: 08477248 <span class="sep">|</span> Sídlo: V Nivách 4564/34, 46601 Jablonec nad Nisou <span class="sep">|</span> Fyzická osoba zapsaná v Živnostenském rejstříku</p>
+                </div>
+                <div class="footer-legal">
+                    <p>&copy; <span id="current-year">2026</span> Weby s radostí. Všechna práva vyhrazena.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Radostný průvodce (Scroll Tracker) -->
+    <div class="scroll-guide" id="scrollGuide">
+        <div class="scroll-track">
+            <div class="scroll-dot" id="scrollDot">
+                <span class="scroll-tooltip">Zpět nahoru</span>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Cookie Consent Bar -->
+    <div id="cookie-consent" class="cookie-bar">
+        <div class="cookie-inner">
+            <div class="cookie-text">
+                <i class="fas fa-cookie-bite cookie-icon"></i>
+                <p>Tento web používá soubory cookies k zajištění nejlepšího uživatelského zážitku. Používáním tohoto
+                    webu souhlasíte s jejich ukládáním.</p>
+            </div>
+            <div class="cookie-buttons">
+                <button id="accept-cookies" class="btn btn-primary btn-cookie-accept">Rozumím</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

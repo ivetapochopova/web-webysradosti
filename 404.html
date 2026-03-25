@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Stránka nenalezena | Weby s radostí</title>
+    <meta name="robots" content="noindex, follow">
+    <link rel="icon" type="image/svg+xml" href="Obrázky/Weby%20s%20radostí%20favicon.svg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        .error-404 {
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: var(--space-xl) 0;
+        }
+        .error-icon {
+            font-size: clamp(4rem, 10vw, 6rem);
+            color: var(--gold-primary);
+            margin-bottom: 2rem;
+            display: block;
+        }
+        .error-content p {
+            margin: 0 auto 2.5rem;
+            max-width: 600px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header / Navigace -->
+    <header class="header scrolled">
+        <div class="container header-inner">
+            <a href="index.html" class="logo"><img src="Obrázky/Weby%20s%20radostí%20logo.svg" alt="Weby s radostí - Logo tvořivého webdesignu" width="200" height="80"></a>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html#co-nabizim" class="nav-link">Co nabízím</a></li>
+                    <li><a href="index.html#jak-to-probiha" class="nav-link">Jak to probíhá</a></li>
+                    <li><a href="index.html#cenik" class="nav-link">Ceník</a></li>
+                    <li><a href="index.html#o-mne" class="nav-link">O mně</a></li>
+                </ul>
+                <a href="index.html#spojme-se" class="btn btn-secondary">Spojme se</a>
+            </nav>
+
+            <button class="menu-toggle" aria-label="Otevřít menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="error-404 bg-cream">
+            <div class="container">
+                <div class="error-content reveal active">
+                    <i class="fa-regular fa-face-frown error-icon"></i>
+                    <h1 class="main-heading" style="text-align: center;">Jejda, tato stránka <span class="italic-gold">neexistuje.</span></h1>
+                    <p>Ale nevadí, pojďte zpět na začátek a zkusíme to znovu.</p>
+                    <a href="index.html" class="btn btn-primary btn-large">Zpět na začátek</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-grid">
+                <div class="footer-brand reveal active">
+                    <div class="logo-footer">Weby s radostí</div>
+                    <p class="footer-tagline">Navrhuji a tvořím autentické weby s důrazem na detail a vaši spokojenost.</p>
+                </div>
+
+                <div class="footer-info reveal active">
+                    <h4 class="footer-title">Kontaktujte mě</h4>
+                    <div class="footer-details">
+                        <p><strong>Iveta Flaisnerová</strong></p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:iveta@webysradosti.cz">iveta@webysradosti.cz</a></p>
+                        <p><i class="fas fa-phone-alt"></i> <a href="tel:+420603748003">+420 603 748 003</a></p>
+                    </div>
+                </div>
+
+                <div class="footer-webkitty reveal active">
+                    <a href="https://webkitty.cz" target="_blank" class="webkitty-link">
+                        <img src="Obrázky/logo-webkitty.svg" alt="Webkitty - Partner pro domény a hosting" class="webkitty-logo" width="150" height="40" loading="lazy">
+                    </a>
+                    <p class="webkitty-text">
+                        Pro hosting a domény spolupracuji s <a href="https://webkitty.cz" target="_blank"><strong>Webkitty</strong></a>. Spolehlivou českou službu sama používám a s čistým svědomím ji doporučuji i vám.
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-footer reveal active">
+                <div class="footer-divider"></div>
+                <div class="footer-bottom-info">
+                    <p>IČO: 08477248 <span class="sep">|</span> Sídlo: V Nivách 4564/34, 46601 Jablonec nad Nisou <span class="sep">|</span> Fyzická osoba zapsaná v Živnostenském rejstříku</p>
+                </div>
+                <div class="footer-legal">
+                    <p>&copy; <span>2026</span> Weby s radostí. Všechna práva vyhrazena.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
