@@ -66,8 +66,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (item !== accordion && item.classList.contains('active')) {
                     item.classList.remove('active');
                     const content = item.querySelector('.accordion-content');
-                    content.style.maxHeight = null;
-                    content.style.paddingTop = '0';
+                    if (content) {
+                        content.style.maxHeight = null;
+                        content.style.paddingTop = '0';
+                        content.style.paddingBottom = '0';
+                    }
                 }
             });
 
@@ -75,14 +78,18 @@ document.addEventListener('DOMContentLoaded', () => {
             accordion.classList.toggle('active');
             const content = accordion.querySelector('.accordion-content');
             
-            if (accordion.classList.contains('active')) {
-                // Expanding
-                content.style.maxHeight = content.scrollHeight + 40 + "px"; // + padding
-                content.style.paddingTop = "1.5rem";
-            } else {
-                // Collapsing
-                content.style.maxHeight = null;
-                content.style.paddingTop = '0';
+            if (content) {
+                if (accordion.classList.contains('active')) {
+                    // Expanding
+                    content.style.maxHeight = content.scrollHeight + 60 + "px"; // Added more space for padding
+                    content.style.paddingTop = "0.8rem"; // Reduced from 1.5rem
+                    content.style.paddingBottom = "0.8rem";
+                } else {
+                    // Collapsing
+                    content.style.maxHeight = null;
+                    content.style.paddingTop = '0';
+                    content.style.paddingBottom = '0';
+                }
             }
         });
     });

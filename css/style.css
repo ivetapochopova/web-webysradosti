@@ -5,7 +5,7 @@
     --gold-dark: #9A7230;
     --gold-light: #F5EDD6;
     --blue: #3B6FA0;
-    --blue-dark: #1C2B3A;
+    --blue-dark: #0D2A54;
     --pink: #E8A0B0;
     --cream: #FDFAF5;
     --text-dark: #1C1C22;
@@ -93,7 +93,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     line-height: 1.25;
     margin-bottom: 2rem;
-    color: #172B4C;
+    color: #0d2a54;
     letter-spacing: -0.01em;
 }
 
@@ -127,11 +127,11 @@ a {
 }
 
 .inline-link:hover {
-    color: var(--gold-primary);
+    color: var(--gold-dark);
 }
 
 .gold-link {
-    color: var(--gold-primary);
+    color: var(--gold-dark);
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
@@ -221,7 +221,7 @@ h3 .italic {
 
 /* UTILITY CLASSES */
 .gold-icon {
-    color: var(--gold-primary);
+    color: var(--gold-dark);
     font-size: 2rem;
     margin-bottom: 1rem;
     display: inline-block;
@@ -339,7 +339,7 @@ h3 .italic {
 
 .header.scrolled .logo,
 .header.scrolled .nav-link {
-    color: #172B4C;
+    color: #0d2a54;
 }
 
 .header.scrolled .menu-toggle {
@@ -372,7 +372,7 @@ h3 .italic {
 }
 
 .header .nav-link {
-    color: #172B4C;
+    color: #0d2a54;
     font-weight: 500;
     position: relative;
     font-size: var(--text-lg);
@@ -483,7 +483,7 @@ h3 .italic {
 }
 
 .hero-content .main-heading {
-    color: #172B4C;
+    color: #0d2a54;
     margin-bottom: 2rem;
     font-weight: 600;
 }
@@ -502,6 +502,17 @@ h3 .italic {
     color: var(--gold-dark);
     margin-bottom: 1.5rem;
     font-family: var(--font-body);
+    text-transform: none; /* Allows lowercase as requested */
+}
+
+.mobile-block {
+    display: inline;
+}
+
+@media (max-width: 768px) {
+    .mobile-block {
+        display: block;
+    }
 }
 
 .hero-actions {
@@ -610,7 +621,7 @@ h3 .italic {
     font-family: var(--font-body);
     font-size: 1.35rem;
     line-height: 1.6;
-    color: #172B4C;
+    color: #0d2a54;
     font-style: normal;
     margin: 0;
     max-width: 850px;
@@ -619,7 +630,7 @@ h3 .italic {
 .quote-text strong {
     font-weight: 700;
     font-style: normal;
-    color: #172B4C;
+    color: #0d2a54;
 }
 
 .gold-italic {
@@ -696,7 +707,7 @@ h3 .italic {
 .point-number {
     font-family: var(--font-heading);
     font-size: var(--text-xl);
-    color: var(--gold-primary);
+    color: var(--gold-dark);
     font-weight: 700;
     opacity: 0.8;
     min-width: 30px;
@@ -792,7 +803,7 @@ h3 .italic {
     font-family: var(--font-body);
     font-size: var(--text-lg); /* Sjednoceno na standardní body pro tuto sekci */
     font-style: italic;
-    color: var(--gold-primary);
+    color: var(--gold-dark);
     margin: 0;
     max-width: 100%;
 }
@@ -909,7 +920,8 @@ h3 .italic {
 }
 
 /* Compact section padding for refined look */
-.section.proces {
+.section.proces,
+.section.faq {
     padding-top: var(--space-lg);
     padding-bottom: var(--space-lg);
 }
@@ -1120,7 +1132,7 @@ h3 .italic {
 .timeline-item .step-content h3 {
     margin-bottom: 0.75rem;
     font-size: var(--text-xl); /* Timeline h3 */
-    color: #172B4C;
+    color: #0d2a54;
 }
 
 .timeline-item .step-content p {
@@ -1142,15 +1154,15 @@ h3 .italic {
     display: grid;
     grid-template-columns: clamp(300px, 32%, 450px) auto;
     justify-content: center;
-    gap: clamp(2rem, 5vw, 4rem);
-    margin-top: 2.8rem;
+    gap: clamp(1.5rem, 4vw, 3rem); /* Reduced from 2rem, 5vw, 4rem */
+    margin-top: 2rem; /* Reduced from 2.8rem */
     align-items: flex-start;
 }
 
 .faq-questions {
     display: flex;
     flex-direction: column;
-    gap: 0.8rem;
+    gap: 0.5rem; /* Reduced from 0.8rem for closer cards */
     max-width: 500px;
 }
 
@@ -1207,7 +1219,7 @@ h3 .italic {
 }
 
 .accordion-header {
-    padding: 0.56rem 1.05rem;
+    padding: 2px 0.85rem; /* Set to absolute minimum to make cards as narrow as possible */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1220,15 +1232,16 @@ h3 .italic {
     font-size: var(--text-base);
     font-family: var(--font-body);
     font-weight: 400;
-    color: #172B4C;
-    line-height: 1.2;
+    color: #0d2a54;
+    line-height: 1; /* Tightest line height */
     text-align: left;
 }
 
 .toggle-icon {
     font-size: var(--text-sm);
-    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    color: var(--gold-primary);
+    transition: transform 0.3s ease;
+    color: var(--gold-dark);
+    line-height: 1; /* Prevent icon from adding height */
 }
 
 .accordion.active .toggle-icon {
@@ -1264,12 +1277,12 @@ h3 .italic {
 .faq-card-header h3 {
     margin: 0;
     font-size: var(--text-base);
-    color: #172B4C;
+    color: #0d2a54;
     line-height: 1.4;
 }
 
 .faq-card-header i {
-    color: var(--gold-primary);
+    color: var(--gold-dark);
     font-size: var(--text-base);
     transition: transform 0.3s ease;
 }
@@ -1279,7 +1292,7 @@ h3 .italic {
 }
 
 .gold-italic {
-    color: var(--gold-primary);
+    color: var(--gold-dark);
     font-style: italic;
     font-weight: 500;
 }
@@ -1287,8 +1300,8 @@ h3 .italic {
 .accordion-content {
     max-height: 0;
     overflow: hidden;
-    transition: all 0.5s cubic-bezier(0, 1, 0, 1);
-    padding: 0 1.4rem;
+    transition: all 0.3s ease;
+    padding: 0 1rem; /* Reduced from 1.4rem */
     opacity: 0;
     font-size: var(--text-base); /* Match question size */
 }
@@ -1303,10 +1316,9 @@ h3 .italic {
 }
 
 .accordion.active .accordion-content {
-    max-height: 2000px; /* Large enough for content */
-    padding-bottom: 1.4rem;
+    max-height: 2000px;
     opacity: 1;
-    transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+    transition: all 0.3s ease-out;
 }
 
 @media (max-width: 992px) {
@@ -1324,8 +1336,8 @@ h3 .italic {
 }
 
 .faq-tip {
-    margin-top: 1.5rem;
-    padding: 1.2rem;
+    margin-top: 1.2rem; /* Reduced from 1.5rem */
+    padding: 0.8rem 1rem; /* Reduced from 1.2rem */
     background: var(--gold-light);
     border-radius: var(--radius-sm);
     display: flex;
@@ -1355,18 +1367,24 @@ h3 .italic {
 
 .faq-list li {
     position: relative;
-    padding-left: 1.5rem;
+    padding-left: 1.8rem;
     margin-bottom: 0.8rem;
     font-size: var(--text-base);
     line-height: 1.5;
+    display: flex;
+    align-items: center;
 }
 
 .faq-list li::before {
-    content: '◆';
+    content: '';
     position: absolute;
     left: 0;
-    color: var(--gold-primary);
-    font-size: var(--text-sm);
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    background-color: var(--gold-dark);
+    border-radius: 50%;
 }
 
 .border-gold {
@@ -1385,7 +1403,7 @@ h3 .italic {
 
 .pricing-included-modern h3 {
     text-align: center;
-    color: var(--gold-primary);
+    color: var(--gold-dark);
     font-size: clamp(1.5rem, 3vw, 2rem);
     margin-bottom: 2.5rem;
 }
@@ -1434,7 +1452,7 @@ h3 .italic {
 
 .icon-blue { color: var(--blue); }
 .icon-pink { color: var(--pink); }
-.icon-gold { color: var(--gold-primary); }
+.icon-gold { color: var(--gold-dark); }
 
 .included-item:hover i {
     filter: brightness(1.1);
@@ -1445,7 +1463,7 @@ h3 .italic {
     font-size: var(--text-lg);
     font-weight: 600;
     margin-bottom: 0.4rem;
-    color: #172B4C;
+    color: #0d2a54;
 }
 
 .included-content p {
@@ -1501,13 +1519,13 @@ h3 .italic {
     font-family: var(--font-body); 
     font-weight: 400;
 }
-.card-head p { font-size: var(--text-base); opacity: 1; color: var(--text-dark); margin-top: 1rem; }
+.card-head p { font-size: var(--text-base); opacity: 1; color: var(--text-dark); margin-top: 1rem; text-align: left; }
 .card-head .price { 
     font-size: 2.5rem; 
     font-weight: 500; 
     font-family: var(--font-body);
     font-style: italic;
-    color: var(--gold-primary);
+    color: var(--gold-dark);
     margin-top: 1rem; 
     position: relative;
     display: inline-block;
@@ -1544,7 +1562,7 @@ h3 .italic {
 .card-pink .features-list-modern li { border-bottom-color: rgba(232, 160, 176, 0.1); }
 .card-blue .features-list-modern li { border-bottom-color: rgba(59, 111, 160, 0.1); }
 
-.features-list-modern i { color: var(--gold-primary); }
+.features-list-modern i { color: var(--gold-dark); }
 
 .badge-mini {
     position: absolute;
@@ -1563,9 +1581,8 @@ h3 .italic {
 
 .pricing-footer {
     margin-top: 2.8rem;
-    text-align: center;
+    text-align: left;
     max-width: 800px;
-    margin-inline: auto;
 }
 
 .pricing-footer p {
@@ -1685,12 +1702,12 @@ h3 .italic {
     }
     
     .payment-info h2 {
-        text-align: center;
+        text-align: left;
     }
     
     .payment-info p {
-        text-align: center;
-        margin-inline: auto;
+        text-align: left;
+        margin-inline: 0;
     }
     
     .payment-step:hover {
@@ -1759,7 +1776,7 @@ h3 .italic {
 .about-story h3 {
     font-size: var(--text-xl); /* Matches Záloha a tvorba */
     margin-bottom: 0.75rem;
-    color: #172B4C;
+    color: #0d2a54;
 }
 
 
@@ -1776,7 +1793,7 @@ h3 .italic {
     display: grid;
     grid-template-columns: 1fr 1.1fr;
     gap: 5rem;
-    align-items: center;
+    align-items: flex-start;
     position: relative;
     z-index: 1;
 }
@@ -1786,7 +1803,7 @@ h3 .italic {
     font-family: var(--font-heading) !important;
     font-size: clamp(2.5rem, 5vw, 3.8rem);
     line-height: 1.1;
-    color: #172B4C;
+    color: #0d2a54;
 }
 
 .contact-intro p {
@@ -1834,7 +1851,7 @@ h3 .italic {
 }
 
 .channel-item:hover .channel-icon {
-    color: var(--gold-primary);
+    color: var(--gold-dark);
 }
 
 .channel-info {
@@ -1867,7 +1884,7 @@ h3 .italic {
 
 .contact-trust-tag i {
     font-size: 1.2rem;
-    color: var(--gold-primary);
+    color: var(--gold-dark);
 }
 
 .contact-trust-tag p {
@@ -1883,6 +1900,40 @@ h3 .italic {
     padding: clamp(1.5rem, 4vw, 3rem);
     position: relative;
     overflow: hidden;
+}
+
+/* Success Message Styling */
+.form-message.success {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 10;
+    padding: 2rem;
+}
+
+.message-icon-gold {
+    font-size: 3.5rem;
+    color: var(--gold-dark);
+    margin-bottom: 1.5rem;
+}
+
+.form-message.success h3 {
+    font-size: 2.2rem;
+    color: #0d2a54;
+    margin-bottom: 1rem;
+    font-family: var(--font-body);
+}
+
+.form-message.success p {
+    font-size: var(--text-lg);
+    color: var(--text-dark);
 }
 
 /* Subtle glow for form card instead of heavy shadows */
@@ -1907,7 +1958,7 @@ h3 .italic {
 .form-header h3 {
     font-size: 2rem;
     margin-bottom: 0.5rem;
-    color: #172B4C;
+    color: #0d2a54;
 }
 
 .form-header p {
@@ -1988,11 +2039,11 @@ h3 .italic {
         grid-template-columns: 1fr;
         gap: 4rem;
     }
-    .contact-intro { text-align: center; }
-    .contact-intro p { margin-inline: auto; }
-    .contact-channels { align-items: center; }
-    .contact-trust-tag { justify-content: center; }
-    .channel-item { width: 100%; max-width: 400px; justify-content: flex-start; }
+    .contact-intro { text-align: left; }
+    .contact-intro p { margin-inline: 0; }
+    .contact-channels { align-items: flex-start; }
+    .contact-trust-tag { justify-content: flex-start; }
+    .channel-item { width: 100%; max-width: 400px; justify-content: flex-start; margin-left: 0; }
 }
 
 @media (max-width: 600px) {
@@ -2009,13 +2060,22 @@ h3 .italic {
 
 @media (max-width: 768px) {
     .omne-overlap-layout { grid-template-columns: 1fr; }
-    .omne-text { padding-right: 0; order: 1; }
-    .omne-image { 
-        position: static; 
-        order: 2; 
-        max-width: 300px; 
-        margin: 0 auto; 
+    .omne-text { padding-right: 0; order: 1; text-align: center; }
+    .omne-image { display: none; }
+    .omne-image-mobile {
+        display: block;
+        max-width: 300px;
+        margin: 0 auto 2.5rem;
     }
+    .about-story { text-align: left; }
+    
+    .faq-questions .glass-card {
+        padding: 1.5rem 1.2rem;
+    }
+}
+
+.omne-image-mobile {
+    display: none;
 }
 
 /* IMAGE COMPONENT */
@@ -2028,7 +2088,7 @@ h3 .italic {
 
 /* FOOTER */
 .footer {
-    background: #172B4C;
+    background: #0d2a54;
     color: var(--white);
     padding: var(--space-xl) 0 3rem;
     position: relative;
@@ -2166,6 +2226,15 @@ h3 .italic {
     gap: 1rem;
 }
 
+@media (max-width: 768px) {
+    .footer-webkitty {
+        align-items: center;
+    }
+    .webkitty-text {
+        text-align: center;
+    }
+}
+
 .webkitty-link {
     display: block;
     line-height: 0;
@@ -2206,6 +2275,10 @@ h3 .italic {
 }
 
 
+.footer-info-line {
+    display: inline;
+}
+
 @media (max-width: 768px) {
     .footer-bottom-info p {
         display: flex;
@@ -2215,6 +2288,10 @@ h3 .italic {
     }
     .footer-bottom-info span.sep {
         display: none;
+    }
+    .footer-info-line {
+        display: block;
+        margin-bottom: 0.2rem;
     }
 }
 
@@ -2375,6 +2452,13 @@ h3 .italic {
         padding: 1.5rem;
     }
 
+    .step-badge {
+        font-size: 0.75rem; /* Menší písmo pro mobil */
+        white-space: nowrap; /* Aby text zůstal na jednom řádku */
+        letter-spacing: 0.05em;
+        padding: 0.3rem 0.6rem;
+    }
+
     .pricing-modern {
         flex-direction: column;
         align-items: center;
@@ -2514,23 +2598,23 @@ h3 .italic {
     }
 }
 
-/* COOKIE CARD - BOTTOM LEFT */
+/* COOKIE BAR - MINIMALIST */
 .cookie-bar {
     position: fixed;
-    bottom: 2rem;
-    left: 2rem;
-    width: 380px;
-    max-width: calc(100vw - 4rem);
-    background: rgba(28, 43, 58, 0.98);
-    backdrop-filter: blur(12px);
+    bottom: 1.5rem;
+    left: 1.5rem;
+    width: 340px;
+    max-width: calc(100vw - 3rem);
+    background: #0d2a54;
+    backdrop-filter: blur(8px);
     color: var(--white);
-    padding: 1.8rem;
+    padding: 1.25rem 1.5rem;
     z-index: 9999;
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-md);
     transform: translateX(-120%);
-    transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
     box-shadow: none;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .cookie-bar.show {
@@ -2540,41 +2624,37 @@ h3 .italic {
 .cookie-inner {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-}
-
-.cookie-text {
-    display: flex;
-    align-items: flex-start;
-    gap: 1.2rem;
+    gap: 1rem;
 }
 
 .cookie-text p {
-    margin-bottom: 0;
-    font-size: var(--text-base);
-    color: rgba(255, 255, 255, 0.9);
-    line-height: 1.5;
-}
-
-.cookie-icon {
-    font-size: 2rem;
-    color: var(--gold-primary);
-    flex-shrink: 0;
-    margin-top: -0.1rem;
+    margin: 0;
+    font-size: var(--text-sm);
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.4;
+    text-align: left;
 }
 
 .cookie-buttons {
     display: flex;
-    gap: 1rem;
-    width: 100%;
+    justify-content: flex-end;
 }
 
 .btn-cookie-accept {
-    width: 100%;
-    padding: 0.8rem 1.5rem;
-    font-size: 0.9rem;
-    background: var(--gold-gradient);
-    color: var(--text-dark);
+    padding: 0.5rem 1.2rem;
+    font-size: 0.85rem;
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--white);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-sm);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-cookie-accept:hover {
+    background: var(--white);
+    color: #0d2a54;
 }
 
 @media (max-width: 576px) {
