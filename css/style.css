@@ -1579,15 +1579,16 @@ h3 .italic {
 /* btn-secondary removed */
 
 .pricing-footer {
-    margin-top: 2.8rem;
+    margin: 2.8rem auto 0;
     text-align: left;
-    max-width: 800px;
+    max-width: 932px; /* Šířka dvou karet (450px*2) + gap (32px) */
 }
 
 .pricing-footer p {
     font-size: var(--text-lg);
     opacity: 1;
     line-height: 1.6;
+    max-width: none;
 }
 
 .gold-highlight {
@@ -2485,6 +2486,10 @@ h3 .italic {
         width: 100%;
         max-width: 400px;
     }
+
+    .pricing-footer {
+        max-width: 400px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -2509,6 +2514,10 @@ h3 .italic {
         width: 100%;
         max-width: 450px;
         margin-inline: auto;
+    }
+
+    .pricing-footer {
+        max-width: 450px;
     }
 
     .pain-point-item:hover {
