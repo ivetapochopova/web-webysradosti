@@ -166,7 +166,8 @@ a {
 .section-header h2,
 .section-header h3,
 .omne-text h2,
-.payment-info h2,
+.payment-grid h2,
+.payment-grid h3,
 .contact-intro h2 {
     font-family: 'Cormorant Garamond', serif !important;
     font-weight: 400 !important;
@@ -175,7 +176,8 @@ a {
 .section-header h2 em,
 .section-header h3 em,
 .omne-text h2 em,
-.payment-info h2 em,
+.payment-grid h2 em,
+.payment-grid h3 em,
 .contact-intro h2 em,
 h2 .italic,
 h3 .italic {
@@ -307,7 +309,7 @@ h3 .italic {
     background: var(--white);
     border: var(--border-soft);
     border-radius: var(--radius-lg);
-    padding: 2rem;
+    padding: 1.5rem;
     box-shadow: none;
     transition: transform 0.3s ease;
 }
@@ -601,67 +603,105 @@ h3 .italic {
 
 
 
-/* QUOTE DIVIDER SECTION */
+/* QUOTE DIVIDER SECTION - REDESIGNED TO CARD STYLE */
 .quote-divider {
-    padding: var(--space-lg) 0;
-    text-align: center;
+    padding: var(--space-xl) 0;
 }
 
-.quote-content {
+.quote-card {
+    background: var(--white);
+    border: var(--border-soft);
+    border-radius: var(--radius-lg);
+    padding: clamp(1.5rem, 3.5vw, 2.5rem);
+    display: flex;
+    gap: clamp(2rem, 5vw, 4.5rem);
+    text-align: left;
     max-width: 1100px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
+    position: relative;
+    box-shadow: 0 10px 40px rgba(13, 42, 84, 0.03);
 }
 
-.quote-text {
-    font-family: var(--font-body);
-    font-size: 1.35rem;
-    line-height: 1.6;
-    color: #0d2a54;
-    font-style: normal;
-    margin: 0;
-    max-width: 850px;
+.quote-card .quote-left {
+    flex: 1.15;
 }
 
-.quote-text strong {
-    font-weight: 700;
-    font-style: normal;
-    color: #0d2a54;
-}
-
-.gold-italic {
-    color: var(--gold-dark);
-    font-style: normal;
+.quote-card .quote-left h2 {
+    font-size: clamp(1.8rem, 3.2vw, 2.8rem);
+    line-height: 1.25;
+    margin-bottom: 2rem;
+    color: var(--blue-dark);
+    font-family: var(--font-heading);
     font-weight: 500;
 }
 
-.quote-icon {
+.quote-card .gold-italic {
     color: var(--gold-dark);
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
+    font-style: italic;
+    font-weight: 400;
 }
 
-.quote-separator {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    width: 60%;
-    margin: 1rem 0;
+.quote-card .quote-left p {
+    font-size: var(--text-lg);
+    line-height: 1.6;
+    color: var(--text-dark);
+    opacity: 0.85;
+    margin: 0;
+    max-width: 100%;
 }
 
-@media (max-width: 768px) {
-    .quote-separator {
-        width: 80%;
+.quote-card .card-divider-vertical {
+    width: 1px;
+    background: rgba(201, 168, 76, 0.15);
+    align-self: stretch;
+}
+
+.quote-card .quote-right {
+    flex: 0.85;
+    align-self: flex-start;
+    padding-top: 5px; /* Alignment adjustment */
+}
+
+.quote-card .quote-right p {
+    font-size: var(--text-lg);
+    line-height: 1.6;
+    color: var(--text-dark);
+    margin-bottom: 1.8rem;
+    max-width: 100%;
+}
+
+.quote-card .quote-right p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+    .quote-card {
+        padding: 3rem 2rem;
+        gap: 3rem;
     }
 }
 
-.quote-separator .line {
-    flex: 1;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(154, 114, 48, 0.3), transparent);
+@media (max-width: 992px) {
+    .quote-card {
+        flex-direction: column;
+        gap: 2.5rem;
+        padding: 2.5rem 1.8rem;
+    }
+    .quote-card .card-divider-vertical {
+        width: 100%;
+        height: 1px;
+    }
+    .quote-card .quote-left h2 {
+        font-size: clamp(1.7rem, 5vw, 2.3rem);
+    }
+    .quote-card .quote-left,
+    .quote-card .quote-right {
+        flex: none;
+        width: 100%;
+    }
+    .quote-card .quote-right {
+        padding-top: 0;
+    }
 }
 
 
@@ -796,15 +836,35 @@ h3 .italic {
 .conclusion-box {
     margin-top: 2.8rem;
     text-align: center;
+    background: var(--white);
+    padding: clamp(1.5rem, 3vw, 2.2rem);
+    border-radius: var(--radius-lg);
+    border: var(--border-soft);
+}
+
+.highlight-nod {
+    color: var(--gold-dark);
+    font-weight: 600;
+    font-style: italic;
+    position: relative;
+    display: inline-block;
+    animation: text-nod 2.5s ease-in-out infinite;
+}
+
+@keyframes text-nod {
+    0%, 100% { transform: translateY(0); }
+    15% { transform: translateY(2px); }
+    30% { transform: translateY(0); }
+    45% { transform: translateY(1px); }
+    60% { transform: translateY(0); }
 }
 
 .conclusion-box p {
     font-family: var(--font-body);
-    font-size: var(--text-lg); /* Sjednoceno na standardní body pro tuto sekci */
-    font-style: italic;
-    color: var(--gold-dark);
+    font-size: var(--text-lg);
     margin: 0;
     max-width: 100%;
+    color: var(--text-dark);
 }
 
 /* BENTO GRID MODERN - Balanced & Refined */
@@ -836,9 +896,67 @@ h3 .italic {
 }
 
 
-/* Grid Spans for Symmetrical Layout */
+/* BENTO GRID MODERN - Original 3+2 Layout (Restored & Refined) */
+.bento-grid-modern {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.bento-card {
+    background: var(--cream);
+    border: var(--border-soft);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem 1.8rem 1.8rem; /* Reduced top padding as requested */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centered layout */
+    text-align: center;
+    transition: border-color 0.4s ease;
+    height: 100%;
+}
+
+.bento-card:hover {
+    border-color: var(--gold-primary);
+}
+
+/* Original Spans: 3 on top, 2 on bottom */
 .bento-autenticita, .bento-lidsky, .bento-rychlost { grid-column: span 2; }
 .bento-detail, .bento-po-spusteni { grid-column: span 3; }
+
+.bento-icon-wrapper {
+    margin-bottom: 1.5rem; /* Consistent spacing between icon and text */
+    width: 140px; /* Restored large size */
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bento-custom-icon {
+    width: 140px; /* Restored to 140px as per 'original' prominence */
+    height: 140px;
+    object-fit: contain;
+}
+
+.bento-info {
+    width: 100%;
+}
+
+.bento-info h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--blue-dark);
+}
+
+.bento-info p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+    color: var(--text-dark);
+}
 
 @media (max-width: 992px) {
     .bento-grid-modern {
@@ -854,68 +972,6 @@ h3 .italic {
     .bento-grid-modern {
         grid-template-columns: 1fr;
     }
-}
-
-/* Shared Styles for all Bento Cards */
-.bento-autenticita, .bento-lidsky, .bento-rychlost, .bento-detail, .bento-po-spusteni { 
-    background: var(--cream); 
-    border: var(--border-soft); /* Soft gold border to define them on light bg */
-}
-
-.bento-icon-wrapper {
-    margin-bottom: 2rem;
-    height: 140px; /* Further increased for SVG prominence */
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Center icon within wrapper */
-}
-
-.bento-custom-icon {
-    height: 140px; /* Large icons as requested */
-    width: auto;
-    object-fit: contain;
-    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-/* .bento-card:hover .bento-custom-icon removed to reduce visual noise */
-.bento-card:hover .bento-custom-icon {
-    transform: none;
-}
-
-
-.bento-info {
-    width: 100%;
-}
-
-.bento-info h3 { 
-    font-size: var(--text-xl); /* Normalized from 1.5rem to 1.25rem for consistency */
-    margin-bottom: 1rem; 
-    font-family: var(--font-body);
-    font-weight: 600;
-    text-align: center;
-}
-
-.bento-info p { 
-    margin: 0; 
-    font-size: var(--text-base); /* 16px */
-    line-height: 1.6;
-    opacity: 0.85; 
-    text-align: left;
-}
-
-.bento-info p:last-child {
-    margin-bottom: 0;
-}
-
-@media (max-width: 1024px) {
-    .bento-grid-modern { grid-template-columns: repeat(4, 1fr); }
-    .bento-autenticita, .bento-lidsky, .bento-rychlost { grid-column: span 2; }
-    .bento-detail, .bento-po-spusteni { grid-column: span 2; }
-}
-
-@media (max-width: 768px) {
-    .bento-grid-modern { grid-template-columns: 1fr; }
-    .bento-card { grid-column: span 1 !important; }
 }
 
 /* Compact section padding for refined look */
@@ -1394,7 +1450,7 @@ h3 .italic {
 .pricing-included-modern {
     margin-bottom: 2.8rem;
     background: var(--white);
-    padding: 3rem;
+    padding: 2rem;
     border-radius: var(--radius-lg);
     border: var(--border-soft);
     box-shadow: none;
@@ -1484,11 +1540,11 @@ h3 .italic {
 
 .pricing-card-modern {
     background: var(--white);
-    padding: 3rem 2.5rem 2rem;
+    padding: 2rem 1.8rem 1.5rem;
     border-radius: var(--radius-lg);
     border: var(--border-accent); /* Gentler 1px gold border */
     flex: 1;
-    max-width: 450px;
+    max-width: 585px;
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -1527,19 +1583,20 @@ h3 .italic {
     color: var(--gold-dark);
     margin-top: 1rem; 
     position: relative;
-    display: inline-block;
-    padding-bottom: 15px;
+    display: block;
+    width: 100%;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 .card-head .price::after {
     content: '';
     position: absolute;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 115%;
+    left: 0;
+    width: 100%;
     height: 1px;
-    background: linear-gradient(90deg, transparent, var(--gold-primary), transparent);
+    background: rgba(201, 168, 76, 0.15);
     border-radius: 1px;
 }
 
@@ -1581,7 +1638,7 @@ h3 .italic {
 .pricing-footer {
     margin: 2.8rem auto 0;
     text-align: left;
-    max-width: 932px; /* Šířka dvou karet (450px*2) + gap (32px) */
+    max-width: 100%; /* Šířka celého kontejneru */
 }
 
 .pricing-footer p {
@@ -1602,32 +1659,49 @@ h3 .italic {
 
 /* Pricing Payment Redesign */
 .pricing-payment {
-    margin-top: 4.2rem;
-    padding: 2.8rem;
+    margin: 3rem auto 0;
+    max-width: 100%; /* Šířka celého kontejneru */
+    padding: 1.5rem;
     background: var(--white);
-    border-radius: var(--radius-xl);
+    border-radius: var(--radius-lg);
     border: var(--border-soft);
     box-shadow: none;
 }
 
 .payment-grid {
     display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: 4rem;
-    align-items: center;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 0 2rem;
+    align-items: start;
 }
 
-.payment-info h2 {
-    margin-bottom: 1.5rem !important;
-    font-size: clamp(2rem, 3.5vw, 3rem);
+.payment-grid h3 {
+    grid-row: 1;
+    grid-column: 1;
+    margin-bottom: 0.8rem !important;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
     text-align: left;
 }
 
+.payment-info {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.payment-steps {
+    grid-row: 2;
+    grid-column: 2;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+/* payment-info p and payment-note styles remain the same */
 .payment-info p {
-    font-size: var(--text-lg);
+    font-size: var(--text-base);
     line-height: 1.6;
     color: var(--text-dark);
-    margin-bottom: 2rem;
+    margin-bottom: 1.2rem;
     max-width: 100%;
 }
 
@@ -1639,18 +1713,13 @@ h3 .italic {
     margin-bottom: 0 !important;
 }
 
-.payment-steps {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
 .payment-step {
     background: var(--cream);
-    padding: 2.22rem;
-    border-radius: var(--radius-lg);
+    padding: 1.2rem;
+    border-radius: var(--radius-md);
     border: var(--border-soft);
     transition: all 0.4s ease;
+    flex: 1;
 }
 
 .payment-step:hover {
@@ -1668,7 +1737,7 @@ h3 .italic {
 
 .step-percentage {
     font-family: var(--font-body);
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     font-weight: 400;
     font-style: italic;
     color: var(--gold-dark);
@@ -1694,26 +1763,34 @@ h3 .italic {
 @media (max-width: 992px) {
     .payment-grid {
         grid-template-columns: 1fr;
-        gap: 3rem;
+        gap: 0;
+    }
+    
+    .payment-grid h3 {
+        grid-row: 1;
+    }
+    
+    .payment-info {
+        grid-row: 2;
+    }
+    
+    .payment-steps {
+        grid-row: 3;
+        margin-top: 1rem;
     }
     
     .pricing-payment {
-        padding: 3rem 2rem;
-    }
-    
-    .payment-info h2 {
-        text-align: left;
-    }
-    
-    .payment-info p {
-        text-align: left;
-        margin-inline: 0;
-    }
-    
-    .payment-step:hover {
-        border-color: var(--gold-primary);
+        padding: 1.5rem;
+        margin-top: 2rem;
     }
 }
+
+@media (max-width: 600px) {
+    .payment-steps {
+        flex-direction: column;
+    }
+}
+
 
 /* O MNĚ OVERLAP */
 .omne-overlap-layout {
@@ -2116,7 +2193,7 @@ h3 .italic {
     left: 0;
     width: 100%;
     height: 0.5px;
-    background: linear-gradient(90deg, transparent, var(--gold-primary), transparent);
+    background: var(--gold-primary);
 }
 
 .footer-grid {
@@ -2227,7 +2304,7 @@ h3 .italic {
 
 .footer-divider {
     height: 1px;
-    background: linear-gradient(90deg, transparent, var(--gold-primary), transparent);
+    background: var(--gold-primary);
     margin-bottom: 2.5rem;
     opacity: 0.8;
 }
@@ -2482,13 +2559,9 @@ h3 .italic {
         align-items: center;
     }
 
-    .pricing-card-modern {
-        width: 100%;
-        max-width: 400px;
-    }
-
+    .pricing-card-modern,
     .pricing-footer {
-        max-width: 400px;
+        max-width: 100%;
     }
 }
 
@@ -2510,14 +2583,9 @@ h3 .italic {
         justify-content: center;
     }
 
-    .pricing-card-modern {
-        width: 100%;
-        max-width: 450px;
-        margin-inline: auto;
-    }
-
+    .pricing-card-modern,
     .pricing-footer {
-        max-width: 450px;
+        max-width: 100%;
     }
 
     .pain-point-item:hover {
