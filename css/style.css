@@ -490,9 +490,11 @@ h1 .gold-italic, h2 .gold-italic, h3 .gold-italic {
 }
 
 .hero-content .main-heading {
+    font-size: clamp(3rem, 6vw, 4.5rem);
     color: #0d2a54;
     margin-bottom: 2rem;
     font-weight: 600;
+    line-height: 1.15;
 }
 
 .italic-gold {
@@ -991,7 +993,7 @@ h1 .gold-italic, h2 .gold-italic, h3 .gold-italic {
     line-height: 1.5;
     margin: 0 auto;
     color: var(--text-dark);
-    text-align: left;
+    text-align: center;
     width: fit-content;
     max-width: 100%;
     text-wrap: pretty;
@@ -2559,7 +2561,7 @@ h1 .gold-italic, h2 .gold-italic, h3 .gold-italic {
     }
 
     h1 { font-size: clamp(2.1rem, 8vw, 2.8rem); }
-    h2 { font-size: clamp(1.8rem, 6vw, 2.2rem); }
+    h2 { font-size: clamp(2.2rem, 4.5vw, 3.8rem); }
     h3 { font-size: 1.6rem; }
 
     .timeline-main::before {
@@ -2607,7 +2609,7 @@ h1 .gold-italic, h2 .gold-italic, h3 .gold-italic {
     }
     
     .hero-subtitle {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         letter-spacing: 0.1rem;
         margin-bottom: 0.8rem;
     }
