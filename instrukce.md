@@ -95,7 +95,7 @@ Vytvoř funkční web, který bude obsahovat:
 •	Krémová (pozadí stránky)
 •	#FDFAF5
 •	Tmavá (text, nadpisy)
-•	#1C1C22
+•	#1A2432
 
 **Fonty**
 •	Cormorant Garamond — nadpisy Elegantní serif s krásnou kurzívou. Přidává osobnost, teplo a prémium dojem. → fonts.google.com/specimen/Cormorant+Garamond
@@ -155,7 +155,7 @@ Mluvím jazykem, kterému rozumíte. Žádné technické výrazy, žádné zkrat
 ⚡  Rychlost
 Web do týdne, ne za měsíce. Můžete začít získávat zákazníky rychle, bez zbytečného čekání.
 🔍  Detail rozhoduje
-Mám cit pro estetiku a přehlednost, věci musí ladit vizuálně i obsahově. Dobrý první dojem vzniká ještě předtím, než si zákazník přečte první větu.
+Záleží mi na detailech. Mám cit pro estetiku a přehlednost, věci musí ladit vizuálně i obsahově.
 💬  Jsem tu i po spuštění
 Nezmizím po předání webu. Potřebujete něco upravit, přidat nebo poradit? Stačí napsat — jsem tu stále pro vás.
  

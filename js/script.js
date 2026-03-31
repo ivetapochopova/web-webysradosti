@@ -216,25 +216,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    // --- Cookie Consent Logic ---
-    const cookieBar = document.getElementById('cookie-consent');
-    const acceptCookiesBtn = document.getElementById('accept-cookies');
-
-    if (cookieBar && acceptCookiesBtn) {
-        // Zkontrolujte, zda uživatel již souhlas udělil
-        if (!localStorage.getItem('cookieConsent')) {
-            // Pokud ne, zobrazte lištu po krátké pauze
-            setTimeout(() => {
-                cookieBar.classList.add('show');
-            }, 1500);
-        }
-
-        // Akce po kliknutí na tlačítko "Rozumím"
-        acceptCookiesBtn.addEventListener('click', () => {
-            localStorage.setItem('cookieConsent', 'true');
-            cookieBar.classList.remove('show');
-        });
-    }
 
     // --- Dynamic Copyright Year ---
     const currentYearSpan = document.getElementById('current-year');
